@@ -14,6 +14,10 @@
     --fonteSec:  'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     height: 100rem;
     background: var(--corPrimaria);
@@ -36,8 +40,12 @@ header ul:nth-of-type(2) {
 
 header ul li {
     list-style: none;
-    color: #FFF;
+}
+
+header ul li a {
+    text-decoration: none;
     font: bold 20rem var(--fontePri);
+    color: #FFF;
 }
 
 header ul li:nth-of-type(1) {
@@ -47,7 +55,7 @@ header ul li:nth-of-type(1) {
 header figure img {
     height: 200rem;
     border-radius: 100rem;
-    box-shadow: 0rem 10rem 10rem #14141499;
+    box-shadow: 0px 10px 10px #14141499;
     margin-top: 60rem;
 }
 
@@ -59,12 +67,13 @@ main .home {
     height: 695rem;
     margin-bottom: 100rem;
     position: relative;
+    z-index: -1;
 }
 
 main .home .container {
     background: #000000A6;
-    height: inherit;
-    padding-top: 162rem;
+    height: 535rem;
+    padding-top: 160rem;
 }
 
 main .home .container h3 {
@@ -157,7 +166,7 @@ main .home .container .redesSociais .redes {
     transform: translateY(calc(-50% - 40rem));
 }
 
-main .home .container .redesSociais .redes div {
+main .home .container .redesSociais .redes a {
     background: transparent;
     width: 50rem;
     height: 50rem;
@@ -166,13 +175,85 @@ main .home .container .redesSociais .redes div {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
-main .home .container .redesSociais .redes div:nth-child(2) {
+main .home .container .redesSociais .redes a:nth-child(2) {
     margin: 20rem 0;
 }
 
 main .home .container .redesSociais .redes i {
     color: #FFF;
     font-size: 30rem;
+}
+
+
+/* MENU */
+
+main #menu {
+    display: grid;
+    grid-template-areas: 'comidas bebidas'
+                         'vinhos sobremesas'
+}
+
+#menu .categoriaMenu {
+    height: 400rem;
+    position: relative;
+}
+
+#menu a.categoriaMenu:first-of-type {
+    background: var(--corPrimaria) url('/img/secoes/comidas.jpeg') center / cover no-repeat;
+    grid-area: 'comidas';
+    object-fit: fill;
+}
+
+#menu a.categoriaMenu:nth-of-type(2) {
+    /* background: var(--corPrimaria) url('/img/secoes/comidas.jpeg') center / cover no-repeat; */
+    grid-area: 'bebidas';
+}
+
+#menu a.categoriaMenu:nth-of-type(3){
+    /* background: var(--corPrimaria) url('/img/secoes/comidas.jpeg') center / cover no-repeat; */
+    grid-area: 'vinhos';
+}
+
+#menu a.categoriaMenu:last-of-type {
+    /* background: var(--corPrimaria) url('/img/secoes/comidas.jpeg') center / cover no-repeat; */
+    grid-area: 'sobremesa';
+}
+
+main #menu .categoriaMenu .containerCategoria {
+    background: #00000080;
+    height: inherit;
+}
+
+main #menu .categoriaMenu .containerCategoria .titulo {
+    display: flex;
+    align-items: center;
+}
+
+main #menu .categoriaMenu .containerCategoria .titulo div {
+    width: 5rem;
+    height: 50rem;
+    background-color: var(--corSecundaria);
+}
+
+main #menu .categoriaMenu .containerCategoria .titulo h3 {
+    font: bold 40rem/30rem var(--fontePri);
+    letter-spacing: 2.5rem;
+    color: #FFF;
+    margin-left: 30rem;
+}
+
+main #menu .categoriaMenu .containerCategoria p {
+    font: 400 22rem/40rem var(--fontePri);
+    color: #FFF;
+    width: 540rem;
+    margin-top: 25rem;
+}
+
+main #menu .categoriaMenu .categoria {
+    position: absolute;
+    bottom: 32rem;
+    left: 70rem;
 }
