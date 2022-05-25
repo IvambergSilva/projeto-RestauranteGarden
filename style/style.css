@@ -265,3 +265,138 @@ main #menu .categoriaMenu .categoria {
     bottom: 32rem;
     left: 70rem;
 }
+
+
+
+
+
+
+footer{
+    background-color: #111;
+}
+
+footer .conteiner {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+footer .titulo{
+    display: flex;
+    align-items: center;
+}
+
+footer .titulo .barraTitulo {
+    width: 5rem;
+    height: 41rem;
+    background: var(--corSecundaria);
+    margin-right: 15rem;
+    margin-left: 70rem;
+    margin-top: 65rem;
+}
+
+footer .titulo h1 {
+    font: 700 30rem/30rem var(--fontePri);
+    color: #fff;
+    margin-bottom: 24rem;
+    margin-top: 70rem;    
+}
+
+footer .endereco {
+    margin-left: 70rem;
+    margin-bottom: 64rem;
+}
+
+footer .endereco .filial {
+    display: flex;
+    align-items: center;
+}
+
+footer .endereco .filial:nth-child(1) {
+    margin-bottom: 60rem;
+}
+
+footer .endereco .filial i {
+    color: #fff;
+    font-size: 36rem;
+    margin-right: 25rem;
+}
+
+footer .endereco .filial h2 {
+    font: 700 20rem/30rem var(--fontePri);
+    color: #fff
+}
+
+footer .endereco .filial p {
+    font: 400 20rem/30rem var(--fontePri);
+    color: #fff;
+}
+
+footer .time {
+    display: flex;
+    align-items: center;
+}
+
+footer .time i {
+    color: #fff;
+    font-size: 36rem;
+    margin-right: 25rem;
+}
+
+footer .time h2, footer .time p {
+    font: 700 20rem/30rem var(--fontePri);
+    color: #fff;
+}
+
+footer .time span {
+    font-weight: 400;
+}
+
+footer .teste {
+    display: flex;
+    align-items: center;
+}
+
+footer .contact i {
+    color: #fff;
+    font-size: 30rem;
+    margin-right: 25rem;
+}
+
+footer .contact h2 {
+    font: 700 20rem/30rem var(--fontePri);
+    color: #fff;
+}
+
+footer .contact button {
+    font: 500 20rem/30rem var(--fontePri);
+    color: #fff;
+    width: 320rem;
+    height: 60rem;
+    border: 2rem solid #FFFFFF;
+    border-radius: 40rem;
+    background: transparent;
+}
+
+footer .midia a {
+    color:#fff;
+    font-size: 25rem;
+    margin-right: 100rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 50rem;
+    padding: 10rem;
+}
+
+footer .midia h2 {
+    font: 700 20rem/30rem var(--fontePri);
+    color: #fff;
+}
+
+footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font: 500 20rem/30rem var(--fontePri);
+    background-color: white;
+    color: #000000;
+}
