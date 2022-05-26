@@ -307,6 +307,12 @@ footer .conteiner {
     grid-template-columns: repeat(3, 1fr);
 }
 
+@media all and (min-width: 768rem) {
+    footer .conteiner {
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
 footer .endereco {
     margin-left: 70rem;
 }
