@@ -17,6 +17,10 @@
     --fonteTer: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #c4c4c4;
 }
@@ -86,7 +90,6 @@ main {
 
 main .container {
     background: #FFFFFFAE;
-    padding-bottom: 50rem;
 }
 
 main .container h1 {
@@ -105,7 +108,7 @@ main .container .barraEnfeite {
 }
 
 main .container p {
-    font:400 18rem/30rem var(--fonteTer);
+    font: 400 18rem/30rem var(--fonteTer);
     text-align: center;
     max-width: 800rem;
     margin: 40rem auto 80rem;
@@ -141,7 +144,7 @@ main .container .categoria .titulo .enfeite div:nth-child(3) {
 }
 
 main .container .categoria .titulo {
-    margin-bottom: 70rem;
+    margin-bottom: 50rem;
 }
 
 main .container .categoria .titulo h2 {
@@ -153,7 +156,7 @@ main .container .categoria .titulo h2 {
 /* CATEGORIA - SUBTÍTULO */
 
 main .container .categoria .subtitulo h3 {
-    font: bold 20rem/30rem var(--fontePri);
+    font: bold 25rem/30rem var(--fontePri);
     letter-spacing: 2rem;
 }
 
@@ -190,13 +193,10 @@ main .container .categoria .subtitulo .enfeite div:nth-child(1) {
 main .container .categoria .rolDeProdutos {
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    margin: 70rem;
+    margin: 30rem 70rem 0;
 }
 
-main .container .categoria .rolDeProdutos .produto {
-}
-
-main .container .categoria .rolDeProdutos .imgProduto {
+main .container .categoria .rolDeProdutos .produto .imgProduto {
     width: 250rem;
     height: 180rem;
     outline-offset: -8rem;
@@ -210,7 +210,7 @@ main .container .categoria .rolDeProdutos .imgProduto {
     object-fit: cover;
 }
 
-main .container .categoria .rolDeProdutos .imgProduto img {
+main .container .categoria .rolDeProdutos .produto .imgProduto img {
     position: absolute;
     object-fit: cover;
     width: 100%;
@@ -219,8 +219,13 @@ main .container .categoria .rolDeProdutos .imgProduto img {
     z-index: -1;
 }
 
-main .container .categoria .rolDeProdutos .imgProduto img:hover {
+main .container .categoria .rolDeProdutos .produto .imgProduto img:hover {
     transform: scale(1.15);
+}
+
+main .container .categoria .rolDeProdutos .produtoMaisHeight .imgProduto{
+    width: 250rem;
+    height: 250rem;
 }
 
 main .container .categoria .rolDeProdutos .produto .legProduto h4 {
@@ -234,5 +239,189 @@ main .container .categoria .rolDeProdutos .produto .legProduto .linhaEnfeite {
     width: 50rem;
     height: 3rem;
     border-radius: 10rem;
-    margin: auto;
+    margin: 0 auto 70rem;
+}
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    padding-bottom: 60rem;
+    background: url('/img/backgroundFooter.png') center / cover no-repeat;
+}
+
+footer .rodape {
+    background: rgba(20, 20, 20, 0.75);
+    padding-bottom: 65rem;
+}
+
+footer .titulo {
+    display: flex;
+    align-items: center;
+}
+
+footer .titulo .barraTitulo {
+    width: 5rem;
+    height: 41rem;
+    background: var(--corSecundaria);
+    margin: 65rem 15rem 0 70rem;
+}
+
+footer .titulo h1 {
+    font: 700 30rem/30rem var(--fontePri);
+    color: #FFF;
+    margin: 70rem 0 24rem;
+}
+
+footer .conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer .endereco {
+    margin-left: 70rem;
+}
+
+footer .endereco .filial {
+    display: flex;
+    align-items: center;
+}
+
+footer .endereco .filial:nth-child(1) {
+    margin-bottom: 60rem;
+}
+
+footer .endereco .filial i {
+    color: #FFF;
+    font-size: 36rem;
+    margin-right: 25rem;
+}
+
+footer .endereco .filial h2 {
+    font: 700 20rem/30rem var(--fontePri);
+    color: #FFF
+}
+
+footer .endereco .filial p {
+    font: 400 20rem/30rem var(--fontePri);
+    color: #FFF;
+    width: 215rem;
+}
+
+footer .horario {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    justify-content: space-between;
+}
+
+footer .horario .barraVertical {
+    width: 5rem;
+    height: 300rem;
+    background: #FFFFFF40;
+}
+
+footer .horario i {
+    color: #FFF;
+    font-size: 36rem;
+    margin-right: 25rem;
+}
+
+footer .horario h2, footer .horario p {
+    font: 700 20rem/30rem var(--fontePri);
+    color: #FFF;
+}
+
+footer .horario span {
+    font-weight: 400;
+}
+
+footer .blocoContatos {
+    display: grid;
+    place-content: center;
+}
+
+footer .blocoContatos .contatos .telefones {
+    display: flex;
+    align-items: center;
+}
+
+footer .blocoContatos .contatos .telefones i {
+    color: #FFF;
+    font-size: 30rem;
+    margin-right: 25rem;
+}
+
+footer .blocoContatos .contatos .telefones h2 {
+    font: 700 20rem/30rem var(--fontePri);
+    color: #FFF;
+}
+
+footer .blocoContatos .contatos button {
+    font: 500 20rem/30rem var(--fontePri);
+    color: #FFF;
+    width: 320rem;
+    height: 60rem;
+    border: 2rem solid #FFF;
+    border-radius: 40rem;
+    background: transparent;
+    margin-top: 15rem;
+    cursor: pointer;
+}
+
+footer .blocoContatos .contatos button:hover {
+    background: #FFF;
+    color: #000;
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+footer .midia div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .midia div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    color:#FFF;
+    border: 1px solid #FFF;
+    text-decoration: none;
+}
+
+footer .midia div a:hover {
+    background: #FFF;
+    color: #000;
+    transition: all .3s;
+}
+
+footer .midia div a i {
+    font-size: 30rem;
+}
+
+footer .midia h2 {
+    font: 700 20rem/30rem var(--fontePri);
+    color: #FFF;
+    margin: 30rem 0;
+}
+
+footer .copyright {
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 500 25rem/30rem var(--fontePri);
+    background-color: #FFF;
+    color: #000;
+    position: absolute;
+    bottom: 0
+}
+
+footer .copyright i {
+    margin-right: 15rem;
 }
