@@ -82,11 +82,11 @@ main {
     max-width: 1200rem;
     background: #FFF url('/img/backgroundPagSec.jpg')center / cover no-repeat;
     margin: auto;
-    padding-bottom: 100rem;
 }
 
 main .container {
-    background: #FFFFFF80;
+    background: #FFFFFFAE;
+    padding-bottom: 50rem;
 }
 
 main .container h1 {
@@ -183,7 +183,6 @@ main .container .categoria .subtitulo .enfeite div:nth-child(1) {
     height: 10rem;
     margin-left: 97rem;
 }
-
 
 
 /* PRODUTOS */

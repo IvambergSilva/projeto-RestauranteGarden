@@ -24,6 +24,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 header ul {
@@ -147,7 +150,7 @@ main .home .mais {
     align-items: center;
 }
 
-main .home .container .redesSociais .barraHorizontal {
+main .home .container .redesSociais .barraVerticalHome {
     height: 300rem;
     width: 2rem;
     background: #FFFFFF80;
@@ -167,14 +170,14 @@ main .home .container .redesSociais .redes {
 }
 
 main .home .container .redesSociais .redes a {
-    background: transparent;
-    width: 50rem;
-    height: 50rem;
-    border-radius: 50%;
-    border: 1rem solid #FFF;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    color:#FFF;
+    border: 1px solid #FFF;
     text-decoration: none;
 }
 
@@ -216,17 +219,17 @@ main #menu {
 }
 
 #menu a.categoriaMenu:nth-of-type(2) {
-    /* background: var(--corPrimaria) url('/img/secoes/comidas.jpeg') center / cover no-repeat; */
+    background: var(--corPrimaria) url('/img/secoes/bebidas.jpeg') center / cover no-repeat;
     grid-area: 'bebidas';
 }
 
 #menu a.categoriaMenu:nth-of-type(3){
-    /* background: var(--corPrimaria) url('/img/secoes/comidas.jpeg') center / cover no-repeat; */
+    background: var(--corPrimaria) url('/img/secoes/vinhos.jpeg') center / cover no-repeat;
     grid-area: 'vinhos';
 }
 
 #menu a.categoriaMenu:last-of-type {
-    /* background: var(--corPrimaria) url('/img/secoes/comidas.jpeg') center / cover no-repeat; */
+    background: var(--corPrimaria) url('/img/secoes/sobremesas.jpeg') center / cover no-repeat;
     grid-area: 'sobremesa';
 }
 
@@ -271,16 +274,19 @@ main #menu .categoriaMenu .categoria {
 
 
 
-footer{
-    background-color: #111;
+footer {
+    height: 500rem;
+    position: relative;
+    padding-bottom: 65rem;
+    background: url('/img/backgroundFooter.png') center / cover no-repeat;
 }
 
-footer .conteiner {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+footer .rodape {
+    background: rgba(20, 20, 20, 0.75);
+    padding-bottom: 65rem;
 }
 
-footer .titulo{
+footer .titulo {
     display: flex;
     align-items: center;
 }
@@ -289,21 +295,22 @@ footer .titulo .barraTitulo {
     width: 5rem;
     height: 41rem;
     background: var(--corSecundaria);
-    margin-right: 15rem;
-    margin-left: 70rem;
-    margin-top: 65rem;
+    margin: 65rem 15rem 0 70rem;
 }
 
 footer .titulo h1 {
     font: 700 30rem/30rem var(--fontePri);
-    color: #fff;
-    margin-bottom: 24rem;
-    margin-top: 70rem;    
+    color: #FFF;
+    margin: 70rem 0 24rem;
+}
+
+footer .conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 footer .endereco {
     margin-left: 70rem;
-    margin-bottom: 64rem;
 }
 
 footer .endereco .filial {
@@ -316,87 +323,136 @@ footer .endereco .filial:nth-child(1) {
 }
 
 footer .endereco .filial i {
-    color: #fff;
+    color: #FFF;
     font-size: 36rem;
     margin-right: 25rem;
 }
 
 footer .endereco .filial h2 {
     font: 700 20rem/30rem var(--fontePri);
-    color: #fff
+    color: #FFF
 }
 
 footer .endereco .filial p {
     font: 400 20rem/30rem var(--fontePri);
-    color: #fff;
+    color: #FFF;
+    width: 215rem;
 }
 
-footer .time {
+footer .horario {
     display: flex;
     align-items: center;
+    place-content: center;
+    justify-content: space-between;
 }
 
-footer .time i {
-    color: #fff;
+footer .horario .barraVertical {
+    width: 5rem;
+    height: 300rem;
+    background: #FFFFFF40;
+}
+
+footer .horario i {
+    color: #FFF;
     font-size: 36rem;
     margin-right: 25rem;
 }
 
-footer .time h2, footer .time p {
+footer .horario h2, footer .horario p {
     font: 700 20rem/30rem var(--fontePri);
-    color: #fff;
+    color: #FFF;
 }
 
-footer .time span {
+footer .horario span {
     font-weight: 400;
 }
 
-footer .teste {
+footer .blocoContatos {
+    display: grid;
+    place-content: center;
+}
+
+footer .blocoContatos .contatos .telefones {
     display: flex;
     align-items: center;
 }
 
-footer .contact i {
-    color: #fff;
+footer .blocoContatos .contatos .telefones i {
+    color: #FFF;
     font-size: 30rem;
     margin-right: 25rem;
 }
 
-footer .contact h2 {
+footer .blocoContatos .contatos .telefones h2 {
     font: 700 20rem/30rem var(--fontePri);
-    color: #fff;
+    color: #FFF;
 }
 
-footer .contact button {
+footer .blocoContatos .contatos button {
     font: 500 20rem/30rem var(--fontePri);
-    color: #fff;
+    color: #FFF;
     width: 320rem;
     height: 60rem;
-    border: 2rem solid #FFFFFF;
+    border: 2rem solid #FFF;
     border-radius: 40rem;
     background: transparent;
+    margin-top: 15rem;
+    cursor: pointer;
 }
 
-footer .midia a {
-    color:#fff;
-    font-size: 25rem;
-    margin-right: 100rem;
-    border: 1px solid #FFFFFF;
-    border-radius: 50rem;
-    padding: 10rem;
+footer .blocoContatos .contatos button:hover {
+    background: #FFF;
+    color: #000;
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+footer .midia div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .midia div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    color:#FFF;
+    border: 1px solid #FFF;
+    text-decoration: none;
+}
+
+footer .midia div a:hover {
+    background: #FFF;
+    color: #000;
+    transition: all .3s;
+}
+
+footer .midia div a i {
+    font-size: 30rem;
 }
 
 footer .midia h2 {
     font: 700 20rem/30rem var(--fontePri);
-    color: #fff;
+    color: #FFF;
+    margin: 30rem 0;
 }
 
 footer .copyright {
+    height: 60rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: justify;
-    font: 500 20rem/30rem var(--fontePri);
-    background-color: white;
-    color: #000000;
+    font: 500 25rem/30rem var(--fontePri);
+    background-color: #FFF;
+    color: #000;
+    position: absolute;
+    bottom: 0
+}
+
+footer .copyright i {
+    margin-right: 15rem;
 }
