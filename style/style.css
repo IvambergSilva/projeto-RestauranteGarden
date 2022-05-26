@@ -161,10 +161,6 @@ main .home .container .redesSociais .barraVerticalHome {
     height: 300rem;
     width: 2rem;
     background: #FFFFFF80;
-    /* position: absolute;
-    right: 120rem;
-    top: 50%;
-    transform: translateY(calc(-50% + 40rem)); */
 }
 
 main .home .container .redesSociais {
@@ -275,10 +271,6 @@ main #menu .categoriaMenu .categoria {
     bottom: 32rem;
     left: 70rem;
 }
-
-
-
-
 
 
 footer {
@@ -461,4 +453,32 @@ footer .copyright {
 
 footer .copyright i {
     margin-right: 15rem;
+}
+
+@media screen and (max-width: 1200px) {
+    header figure img {
+        height: 150rem;
+    } 
+
+    header ul:nth-of-type(1) {
+        margin-right: 5vw;
+    }
+    header ul:nth-of-type(2) {
+        margin-left: 5vw;
+    }
+
+    main #menu {
+        display: grid;
+        grid-template-areas: 'comidas'
+                             'bebidas'
+                             'vinhos'
+                             'sobremesas';
+        grid-gap: 10rem;
+        background: var(--corPrimaria);
+    }
+
+    
+    main .home .container .redesSociais  {
+        display: none;
+    }
 }
