@@ -69,16 +69,14 @@ main .home {
     background: var(--corPrimaria) url('../img/backgroundHome.jpg')  center / cover no-repeat;
     width: 100%;
     height: 695rem;
-    /* margin-bottom: 100rem; */
-    padding-top: 100rem; 
     width: 100%;
     position: relative;
 }
 
 main .home .container {
     background: #000000A6;
-    padding-top: 160rem;
-    height: inherit;
+    padding-top: 200rem;
+    height: 495rem;
 }
 
 main .home .container h3 {
@@ -417,6 +415,13 @@ main #reservas button {
     cursor: pointer;
 }
 
+main #reservas button:hover {
+    background: #FFFFFF;
+    color: var(--corTerciaria);
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
 main #reservas .flexivel .input {
     width: 330rem;
     height: 70rem;
@@ -467,6 +472,8 @@ main #reservas .flexivel .input:nth-child(3) {
 main #reservas .flexivel .inputRoxo:nth-child(3) {
     width: 370rem;
 }
+
+/* FOOTER */
 
 footer {
     position: relative;
@@ -581,19 +588,19 @@ footer .blocoContatos .contatos .telefones h2 {
     color: #FFF;
 }
 
-footer .blocoContatos .contatos button {
+footer .blocoContatos .contatos a {
     font: 500 20rem/30rem var(--fontePri);
     color: #FFF;
-    width: 320rem;
-    height: 60rem;
     border: 2rem solid #FFF;
     border-radius: 40rem;
-    background: transparent;
     margin-top: 15rem;
     cursor: pointer;
+    padding: 10rem 60rem;
+    display: block;
+    text-decoration: none;
 }
 
-footer .blocoContatos .contatos button:hover {
+footer .blocoContatos .contatos a:hover {
     background: #FFF;
     color: #000;
     transform: scale(1.05);
@@ -667,9 +674,15 @@ footer .copyright i {
         margin-left: 5vw;
     }
     
-    
     main .home .container h1 {
         font-size: 90rem;
+    }
+    
+
+    main .home .container {
+        background: #000000A6;
+        height: 515rem;
+        padding-top: 180rem;
     }
         
     main .home .container div .enfeite, main .home .container .barraEnfeite  {
