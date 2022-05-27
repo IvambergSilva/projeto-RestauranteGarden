@@ -249,7 +249,7 @@ main .container .categoria .rolDeProdutos .produto .legProduto .linhaEnfeite {
 footer {
     position: relative;
     padding-bottom: 60rem;
-    background: url('.../img/backgroundFooter.png') center / cover no-repeat;
+    background: url('../img/backgroundFooter.png') center / cover no-repeat;
 }
 
 footer .rodape {
@@ -437,11 +437,15 @@ footer .copyright i {
         position: relative;
     }
 
+    header figure img {
+        height: 150rem;
+    }
+
     header ul li a.voltar {
         width: 60rem;
         position: absolute;
         bottom: 50%;
-        transform: translate(50rem, 50%);
+        transform: translate(100rem, 50%);
     }
 
     header ul li a span {
@@ -451,6 +455,31 @@ footer .copyright i {
     header .ulContato li {
         display: none;
     }
+
+    footer .endereco {
+        margin: 0;
+    }
+
+    footer .endereco .filial:nth-child(1){
+        margin-bottom: 30rem;
+    }
+    
+    footer .horario .barraVertical {
+        display: none;
+    }
+
+    footer .horario {
+        margin: 30rem 0;
+    }
+
+    footer .conteiner {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    footer .midia h2 {
+        text-align: center;
+    }
 }
 
 @media all and (max-width: 750px) {
@@ -458,3 +487,5 @@ footer .copyright i {
         grid-template-columns: 1fr;
     }
 }
+
+
