@@ -511,7 +511,7 @@ main #reservas .flexivel .inputRoxo {
     font-style: normal;
     letter-spacing: 0.2em;
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--corSecundaria);
     border-radius: 5rem;
 }
 
