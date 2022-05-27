@@ -471,6 +471,13 @@ main #reservas button {
     cursor: pointer;
 }
 
+main #reservas button:hover {
+    background: #FFFFFF;
+    color: var(--corTerciaria);
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
 main #reservas .flexivel .input {
     width: 330rem;
     height: 70rem;
