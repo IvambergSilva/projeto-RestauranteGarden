@@ -504,7 +504,7 @@ main #reservas .flexivel .inputRoxo {
     outline: none;
     border: none;
     box-sizing: border-box;
-    padding-left: 50rem;
+    padding: 0 50rem;
     margin-bottom: 50rem;
     font-family: var(--fontePri);
     font-size: 20rem;
@@ -762,11 +762,6 @@ footer .copyright i {
 }
 
 @media all and (max-width: 1100px){
-    footer .conteiner {
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-
     main #restaurante .grid {
         grid-template-columns: 1fr;
         place-items: center;
@@ -780,7 +775,31 @@ footer .copyright i {
     main #restaurante .grid .nossaHistoria p {
         margin-right: 70rem;
     }
+
+    main #reservas {
+        height: 950rem;
+    }
+
+    main #reservas .flexivel .flex1 {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 45rem;
+    }
+
+    main #reservas .flexivel .flex1 input{
+        display: block;
+        margin: auto;
+    } 
     
+    main #reservas .flexivel .flex1 input:nth-child(2) {
+        margin: 45rem 0;
+    }
+
+    footer .conteiner {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
     footer .endereco {
         margin: 0;
     }
