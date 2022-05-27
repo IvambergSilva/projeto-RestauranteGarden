@@ -794,15 +794,32 @@ footer .copyright i {
     main #reservas .flexivel .flex1 input:nth-child(2) {
         margin: 45rem 0;
     }
+    
+    footer .endereco {
+        margin: 0;
+    }
+
+    footer .endereco .filial:nth-child(1){
+        margin-bottom: 30rem;
+    }
+    
+    footer .horario .barraVertical {
+        display: none;
+    }
+
+    footer .horario {
+        margin: 30rem 0;
+    }
 
     footer .conteiner {
         grid-template-columns: 1fr;
         place-items: center;
     }
 
-    footer .endereco {
-        margin: 0;
+    footer .midia h2 {
+        text-align: center;
     }
+
 }
 
 @media all and (max-width: 620px){
