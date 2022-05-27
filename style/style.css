@@ -293,19 +293,24 @@ main #restaurante .flex {
 }
 
  main #restaurante .grid {
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     grid-gap: 40rem;
-     background: #FFFFFF80;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40rem;
+    background: #FFFFFF80;
  }
 
  main #restaurante .grid .nossaHistoria {
-     margin-top: 92rem;
+    margin-top: 92rem;
  }
 
  main #restaurante .grid .videoHist {
-     margin: auto 40rem;
+    margin: auto 40rem;
  }
+
+ /* main #restaurante .grid .videoHist iframe {
+    min-width: 450px;
+    height: 255px;
+ } */
 
 main #restaurante .grid .containerVideo {
     display: flex;
@@ -761,6 +766,20 @@ footer .copyright i {
         grid-template-columns: 1fr;
         place-items: center;
     }
+
+    main #restaurante .grid {
+        grid-template-columns: 1fr;
+        place-items: center;
+        padding-bottom: 40rem;
+    }
+
+    main #restaurante p {
+        padding-bottom: 0rem;
+    }
+
+    main #restaurante .grid .nossaHistoria p {
+        margin-right: 70rem;
+    }
     
     footer .endereco {
         margin: 0;
@@ -777,6 +796,16 @@ footer .copyright i {
     header ul {
         display: none;
     }
+
+    main #restaurante .grid .containerVideo .barraVideo {
+        display: none;
+    }
+
+    main #restaurante .grid .containerVideo iframe {
+        width: 350px;
+        height: 200px;
+    }
+
     .barraMenu {
         display: block;
     }
