@@ -307,12 +307,6 @@ footer .conteiner {
     grid-template-columns: repeat(3, 1fr);
 }
 
-@media all and (min-width: 768rem) {
-    footer .conteiner {
-        grid-template-columns: 3fr 1fr;
-    }
-}
-
 footer .endereco {
     margin-left: 70rem;
 }
@@ -462,6 +456,10 @@ footer .copyright i {
 }
 
 @media screen and (max-width: 1200px) {
+    header {
+        position: relative;
+    }
+
     header figure img {
         height: 150rem;
     } 
@@ -469,8 +467,18 @@ footer .copyright i {
     header ul:nth-of-type(1) {
         margin-right: 5vw;
     }
+
     header ul:nth-of-type(2) {
         margin-left: 5vw;
+    }
+    
+    
+    main .home .container h1 {
+        font-size: 90rem;
+    }
+        
+    main .home .container div .enfeite, main .home .container .barraEnfeite  {
+        display: none;
     }
 
     main #menu {
@@ -483,8 +491,18 @@ footer .copyright i {
         background: var(--corPrimaria);
     }
 
-    
     main .home .container .redesSociais  {
         display: none;
+    }
+}
+
+@media all and (max-width: 1100px){
+    footer .conteiner {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    
+    footer .endereco {
+        margin: 0;
     }
 }
