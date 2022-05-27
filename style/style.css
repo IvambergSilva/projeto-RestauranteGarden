@@ -9,8 +9,7 @@
 :root {
     font-size: 6.25%;
     --corPrimaria: #141414;
-    --corSecundaria: #27C224;
-    --corTerciaria: #FFAA3A;
+    --corSecundaria: #FFAA3A;
     --fontePri: 'Dosis', sans-serif;
     --fonteSec:  'Poppins', sans-serif;
 }
@@ -19,15 +18,16 @@ html {
     scroll-behavior: smooth;
 }
 
+
 header {
     height: 100rem;
     background: var(--corPrimaria);
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
     width: 100%;
     z-index: 2;
+    position: relative;
 }
 
 header ul {
@@ -61,6 +61,62 @@ header figure img {
     border-radius: 100rem;
     box-shadow: 0px 10px 10px #14141499;
     margin-top: 60rem;
+}
+
+/* BARRA DE MENU */
+
+.barraMenu {
+    transform: rotateY(180deg);
+    position: absolute;
+    right: 50rem;
+    display: none;
+}
+
+.barraMenu span {
+    display: block;
+    height: 2rem;
+    background-color: #FFF;
+    border-radius: 4px;
+}
+
+.barraMenu span:nth-child(1){
+    width: 24rem;
+}
+
+.barraMenu span:nth-child(2){
+    width: 18rem;
+    margin: 5rem 0;
+}
+
+.barraMenu span:nth-child(3){
+    width: 12rem;
+}
+
+.barraMenu, .barraMenu span{
+    transition: all 0.3s ease-in-out;
+}
+
+.barraMenu.ativada {
+    transition-delay: 0.6s;
+    transform: rotate(45deg);
+}
+
+.barraMenu.ativada span:nth-child(2) {
+    width: 0;
+}
+
+.barraMenu.ativada span:nth-child(1),
+.barraMenu.ativada span:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.barraMenu.ativada span:nth-child(1) {
+    transform: translateY(7rem);
+}
+
+.barraMenu.ativada span:nth-child(3) {
+    transform: translateY(-7rem) rotate(90deg);
+    width: 24rem;
 }
 
 /* MAIN  -  HOME */
@@ -139,10 +195,10 @@ main .home .container .barraEnfeite {
 }
 
 main .home .container p {
-    width: 500rem;
+    max-width: 500rem;
     text-align: center;
     margin: 25rem auto 60rem;
-    font: 400 20rem/24rem var(--fonteSec);
+    font: 400 18rem/24rem var(--fonteSec);
     color: #FFF;
 }
 
@@ -228,7 +284,7 @@ main #restaurante p {
 main #restaurante .barra-hist {
     width: 5rem;
     height: 41rem;
-    background-color: var(--corTerciaria);
+    background-color: var(--corSecundaria);
 }
 
 main #restaurante .flex {
@@ -347,7 +403,7 @@ main #menu .categoriaMenu .containerCategoria .titulo h3 {
 main #menu .categoriaMenu .containerCategoria p {
     font: 400 22rem/40rem var(--fontePri);
     color: #FFF;
-    width: 540rem;
+    width: 500rem;
     margin-top: 25rem;
 }
 
@@ -383,7 +439,7 @@ main #reservas h1 {
 main #reservas .barra-reserva {
     width: 5rem;
     height: 41rem;
-    background-color: var(--corTerciaria);
+    background-color: var(--corSecundaria);
 }
 
 main #reservas .flexRes {
@@ -411,7 +467,7 @@ main #reservas button {
     font-family: var(--fontePri);
     font-size: 20rem;
     font-weight: 700;
-    background-color: var(--corTerciaria);
+    background-color: var(--corSecundaria);
     cursor: pointer;
 }
 
@@ -465,6 +521,8 @@ main #reservas .flexivel .input:nth-child(3) {
 main #reservas .flexivel .inputRoxo:nth-child(3) {
     width: 370rem;
 }
+
+/* FOOTER */
 
 footer {
     position: relative;
@@ -648,7 +706,7 @@ footer .copyright i {
     margin-right: 15rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media all and (max-width: 1200px) {
     header {
         position: relative;
     }
@@ -703,5 +761,20 @@ footer .copyright i {
     
     footer .endereco {
         margin: 0;
+    }
+}
+
+@media all and (max-width: 620px){
+    main #menu .categoriaMenu .containerCategoria p {
+        display: none;
+    }
+}
+
+@media all and (max-width: 680px) {
+    header ul {
+        display: none;
+    }
+    .barraMenu {
+        display: block;
     }
 }
