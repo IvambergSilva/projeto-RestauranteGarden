@@ -84,7 +84,7 @@ header ul li a i {
 
 main {
     max-width: 1200rem;
-    background: #FFF url('/img/backgroundPagSec.jpg')center / cover no-repeat;
+    background: #FFF url('../img/backgroundPagSec.jpg')center / cover no-repeat;
     margin: auto;
 }
 
@@ -249,7 +249,7 @@ main .container .categoria .rolDeProdutos .produto .legProduto .linhaEnfeite {
 footer {
     position: relative;
     padding-bottom: 60rem;
-    background: url('/img/backgroundFooter.png') center / cover no-repeat;
+    background: url('.../img/backgroundFooter.png') center / cover no-repeat;
 }
 
 footer .rodape {
