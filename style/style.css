@@ -9,8 +9,7 @@
 :root {
     font-size: 6.25%;
     --corPrimaria: #141414;
-    --corSecundaria: #27C224;
-    --corTerciaria: #FFAA3A;
+    --corSecundaria: #FFAA3A;
     --fontePri: 'Dosis', sans-serif;
     --fonteSec:  'Poppins', sans-serif;
 }
@@ -19,15 +18,16 @@ html {
     scroll-behavior: smooth;
 }
 
+
 header {
     height: 100rem;
     background: var(--corPrimaria);
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
     width: 100%;
     z-index: 2;
+    position: relative;
 }
 
 header ul {
@@ -61,6 +61,62 @@ header figure img {
     border-radius: 100rem;
     box-shadow: 0px 10px 10px #14141499;
     margin-top: 60rem;
+}
+
+/* BARRA DE MENU */
+
+.barraMenu {
+    transform: rotateY(180deg);
+    position: absolute;
+    right: 50rem;
+    display: none;
+}
+
+.barraMenu span {
+    display: block;
+    height: 2rem;
+    background-color: #FFF;
+    border-radius: 4px;
+}
+
+.barraMenu span:nth-child(1){
+    width: 24rem;
+}
+
+.barraMenu span:nth-child(2){
+    width: 18rem;
+    margin: 5rem 0;
+}
+
+.barraMenu span:nth-child(3){
+    width: 12rem;
+}
+
+.barraMenu, .barraMenu span{
+    transition: all 0.3s ease-in-out;
+}
+
+.barraMenu.ativada {
+    transition-delay: 0.6s;
+    transform: rotate(45deg);
+}
+
+.barraMenu.ativada span:nth-child(2) {
+    width: 0;
+}
+
+.barraMenu.ativada span:nth-child(1),
+.barraMenu.ativada span:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.barraMenu.ativada span:nth-child(1) {
+    transform: translateY(7rem);
+}
+
+.barraMenu.ativada span:nth-child(3) {
+    transform: translateY(-7rem) rotate(90deg);
+    width: 24rem;
 }
 
 /* MAIN  -  HOME */
@@ -139,10 +195,10 @@ main .home .container .barraEnfeite {
 }
 
 main .home .container p {
-    width: 500rem;
+    max-width: 500rem;
     text-align: center;
     margin: 25rem auto 60rem;
-    font: 400 20rem/24rem var(--fonteSec);
+    font: 400 18rem/24rem var(--fonteSec);
     color: #FFF;
 }
 
@@ -201,7 +257,6 @@ main .home .container .redesSociais a:nth-child(2) {
 
 main #restaurante {
     width: 100%;
-    /* height: 500rem; */
     background-color: #FFF;
     background-image: url('../img/backgroundPagSec.jpg');
     background-size: cover;
@@ -228,7 +283,7 @@ main #restaurante p {
 main #restaurante .barra-hist {
     width: 5rem;
     height: 41rem;
-    background-color: var(--corTerciaria);
+    background-color: var(--corSecundaria);
 }
 
 main #restaurante .flex {
@@ -240,25 +295,21 @@ main #restaurante .flex {
  main #restaurante .grid {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
-     /* column-gap: 105rem ; */
+     grid-gap: 40rem;
+     background: #FFFFFF80;
  }
 
  main #restaurante .grid .nossaHistoria {
-     margin-top: 92.15rem;
+     margin-top: 92rem;
  }
 
  main #restaurante .grid .videoHist {
-     margin-top: 137rem;
-     margin-left: 40rem;
-     margin-right: 40rem;
-    }
+     margin: auto 40rem;
+ }
 
 main #restaurante .grid .containerVideo {
     display: flex;
-    /* margin: auto; */
-    object-fit: cover;
     justify-content: center;
-    /* align-items: center; */
 }
 
 main #restaurante .grid .containerVideo .barraVideo {
@@ -349,7 +400,7 @@ main #menu .categoriaMenu .containerCategoria .titulo h3 {
 main #menu .categoriaMenu .containerCategoria p {
     font: 400 22rem/40rem var(--fontePri);
     color: #FFF;
-    width: 540rem;
+    width: 500rem;
     margin-top: 25rem;
 }
 
@@ -364,7 +415,7 @@ main #menu .categoriaMenu .categoria {
 main #reservas {
     width: 100%;
     height: 500rem;
-    background-color: #601C31;
+    background-color: var(--corPrimaria);
     background-image: url('../img/secoes/Rectangle\ 44.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -385,7 +436,7 @@ main #reservas h1 {
 main #reservas .barra-reserva {
     width: 5rem;
     height: 41rem;
-    background-color: var(--corTerciaria);
+    background-color: var(--corSecundaria);
 }
 
 main #reservas .flexRes {
@@ -407,13 +458,13 @@ main #reservas button {
     width: 330rem;
     height: 70rem;
     border-radius: 30rem;
-    color: #601C31;
+    color: var(--corPrimaria);
     border: none;
     letter-spacing: 0.2em;
     font-family: var(--fontePri);
     font-size: 20rem;
     font-weight: 700;
-    background-color: var(--corTerciaria);
+    background-color: var(--corSecundaria);
     cursor: pointer;
 }
 
@@ -444,7 +495,7 @@ main #reservas .flexivel .input {
 main #reservas .flexivel .inputRoxo {
     width: 330rem;
     height: 70rem;
-    background-color: #601C31;
+    background-color: var(--corPrimaria);
     outline: none;
     border: none;
     box-sizing: border-box;
@@ -659,7 +710,7 @@ footer .copyright i {
     margin-right: 15rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media all and (max-width: 1200px) {
     header {
         position: relative;
     }
@@ -680,7 +731,6 @@ footer .copyright i {
         font-size: 90rem;
     }
     
-
     main .home .container {
         background: #000000A6;
         height: 515rem;
@@ -714,5 +764,20 @@ footer .copyright i {
     
     footer .endereco {
         margin: 0;
+    }
+}
+
+@media all and (max-width: 620px){
+    main #menu .categoriaMenu .containerCategoria p {
+        display: none;
+    }
+}
+
+@media all and (max-width: 680px) {
+    header ul {
+        display: none;
+    }
+    .barraMenu {
+        display: block;
     }
 }

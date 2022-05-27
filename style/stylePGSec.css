@@ -84,7 +84,7 @@ header ul li a i {
 
 main {
     max-width: 1200rem;
-    background: #FFF url('/img/backgroundPagSec.jpg')center / cover no-repeat;
+    background: #FFF url('../img/backgroundPagSec.jpg')center / cover no-repeat;
     margin: auto;
 }
 
@@ -93,7 +93,7 @@ main .container {
 }
 
 main .container h1 {
-    font: bold 50rem/30rem var(--fontePri);
+    font: bold 50rem/50rem var(--fontePri);
     letter-spacing: 2rem;
     text-align: center;
     padding: 125rem 0 25rem; 
@@ -110,7 +110,7 @@ main .container .barraEnfeite {
 main .container p {
     font: 400 18rem/30rem var(--fonteTer);
     text-align: center;
-    max-width: 800rem;
+    max-width: 700rem;
     margin: 40rem auto 80rem;
 }
 
@@ -194,6 +194,8 @@ main .container .categoria .rolDeProdutos {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     margin: 30rem 70rem 0;
+    place-items: center;
+
 }
 
 main .container .categoria .rolDeProdutos .produto .imgProduto {
@@ -247,7 +249,7 @@ main .container .categoria .rolDeProdutos .produto .legProduto .linhaEnfeite {
 footer {
     position: relative;
     padding-bottom: 60rem;
-    background: url('/img/backgroundFooter.png') center / cover no-repeat;
+    background: url('.../img/backgroundFooter.png') center / cover no-repeat;
 }
 
 footer .rodape {
@@ -424,4 +426,35 @@ footer .copyright {
 
 footer .copyright i {
     margin-right: 15rem;
+}
+
+@media all and (max-width: 1200px) {
+    main .container .categoria .rolDeProdutos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        position: relative;
+    }
+
+    header ul li a.voltar {
+        width: 60rem;
+        position: absolute;
+        bottom: 50%;
+        transform: translate(50rem, 50%);
+    }
+
+    header ul li a span {
+        display: none;
+    }
+
+    header .ulContato li {
+        display: none;
+    }
+}
+
+@media all and (max-width: 750px) {
+    main .container .categoria .rolDeProdutos {
+        grid-template-columns: 1fr;
+    }
 }
