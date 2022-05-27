@@ -66,7 +66,7 @@ header figure img {
 /* MAIN  -  HOME */
 
 main .home {
-    background: var(--corPrimaria) url('/img/backgroundHome.jpg')  center / cover no-repeat;
+    background: var(--corPrimaria) url('../img/backgroundHome.jpg')  center / cover no-repeat;
     width: 100%;
     height: 695rem;
     /* margin-bottom: 100rem; */
@@ -303,23 +303,23 @@ main #menu {
 }
 
 #menu a.categoriaMenu:first-of-type {
-    background: var(--corPrimaria) url('/img/secoes/comidas.jpeg') center / cover no-repeat;
+    background: var(--corPrimaria) url('../img/secoes/comidas.jpeg') center / cover no-repeat;
     grid-area: 'comidas';
     object-fit: fill;
 }
 
 #menu a.categoriaMenu:nth-of-type(2) {
-    background: var(--corPrimaria) url('/img/secoes/bebidas.jpeg') center / cover no-repeat;
+    background: var(--corPrimaria) url('../img/secoes/bebidas.jpeg') center / cover no-repeat;
     grid-area: 'bebidas';
 }
 
 #menu a.categoriaMenu:nth-of-type(3){
-    background: var(--corPrimaria) url('/img/secoes/vinhos.jpeg') center / cover no-repeat;
+    background: var(--corPrimaria) url('../img/secoes/vinhos.jpeg') center / cover no-repeat;
     grid-area: 'vinhos';
 }
 
 #menu a.categoriaMenu:last-of-type {
-    background: var(--corPrimaria) url('/img/secoes/sobremesas.jpeg') center / cover no-repeat;
+    background: var(--corPrimaria) url('../img/secoes/sobremesas.jpeg') center / cover no-repeat;
     grid-area: 'sobremesa';
 }
 
@@ -471,7 +471,7 @@ main #reservas .flexivel .inputRoxo:nth-child(3) {
 footer {
     position: relative;
     padding-bottom: 60rem;
-    background: url('/img/backgroundFooter.png') center / cover no-repeat;
+    background: url('../img/backgroundFooter.png') center / cover no-repeat;
 }
 
 footer .rodape {
