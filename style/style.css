@@ -251,12 +251,14 @@ main #restaurante .flex {
      margin-top: 137rem;
      margin-left: 40rem;
      margin-right: 40rem;
- }
+    }
 
 main #restaurante .grid .containerVideo {
     display: flex;
     /* margin: auto; */
     object-fit: cover;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 main #restaurante .grid .containerVideo .barraVideo {
