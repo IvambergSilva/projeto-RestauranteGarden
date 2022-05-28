@@ -307,11 +307,6 @@ main #restaurante .flex {
     margin: auto 40rem;
  }
 
- /* main #restaurante .grid .videoHist iframe {
-    min-width: 450px;
-    height: 255px;
- } */
-
 main #restaurante .grid .containerVideo {
     display: flex;
     justify-content: center;
