@@ -586,8 +586,8 @@ footer .endereco .filial:nth-child(1) {
     margin-bottom: 60px;
 }
 
-footer .endereco .filial i, footer .horario i,
-footer .contatos .telefones i {
+footer .endereco .filial svg, footer .horario i,
+footer .contatos .telefones svg {
     color: #FFF;
     font-size: 36px;
     margin-right: 25px;
