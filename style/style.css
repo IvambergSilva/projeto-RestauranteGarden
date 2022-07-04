@@ -7,7 +7,6 @@
 }
 
 :root {
-    font-size: 6.25%;
     --corPrimaria: #141414;
     --corSecundaria: #FFAA3A;
     --fontePri: 'Dosis', sans-serif;
@@ -20,7 +19,7 @@ html {
 
 
 header {
-    height: 100rem;
+    height: 100px;
     background: var(--corPrimaria);
     display: flex;
     justify-content: center;
@@ -35,11 +34,11 @@ header ul {
 }
 
 header ul:nth-of-type(1) {
-    margin-right: 200rem;
+    margin-right: 200px;
 }
 
 header ul:nth-of-type(2) {
-    margin-left: 200rem;
+    margin-left: 200px;
 }
 
 header ul li {
@@ -48,19 +47,24 @@ header ul li {
 
 header ul li a {
     text-decoration: none;
-    font: bold 20rem var(--fontePri);
+    font: bold 20px var(--fontePri);
     color: #FFF;
 }
 
+header ul li a:hover {
+    color: var(--corSecundaria);
+    text-decoration: none;
+}
+
 header ul li:nth-of-type(1) {
-    margin-right: 60rem;
+    margin-right: 60px;
 }
 
 header figure img {
-    height: 200rem;
-    border-radius: 100rem;
+    height: 200px;
+    border-radius: 100px;
     box-shadow: 0px 10px 10px #14141499;
-    margin-top: 60rem;
+    margin-top: 60px;
 }
 
 /* BARRA DE MENU */
@@ -68,28 +72,28 @@ header figure img {
 .barraMenu {
     transform: rotateY(180deg);
     position: absolute;
-    right: 50rem;
+    right: 50px;
     display: none;
 }
 
 .barraMenu span {
     display: block;
-    height: 2rem;
+    height: 2px;
     background-color: #FFF;
     border-radius: 4px;
 }
 
 .barraMenu span:nth-child(1){
-    width: 24rem;
+    width: 24px;
 }
 
 .barraMenu span:nth-child(2){
-    width: 18rem;
-    margin: 5rem 0;
+    width: 18px;
+    margin: 5px 0;
 }
 
 .barraMenu span:nth-child(3){
-    width: 12rem;
+    width: 12px;
 }
 
 .barraMenu, .barraMenu span{
@@ -111,32 +115,32 @@ header figure img {
 }
 
 .barraMenu.ativada span:nth-child(1) {
-    transform: translateY(7rem);
+    transform: translateY(7px);
 }
 
 .barraMenu.ativada span:nth-child(3) {
-    transform: translateY(-7rem) rotate(90deg);
-    width: 24rem;
+    transform: translateY(-7px) rotate(90deg);
+    width: 24px;
 }
 
 /* MAIN  -  HOME */
 
 main .home {
     background: var(--corPrimaria) url('../img/backgroundHome.jpg')  center / cover no-repeat;
-    width: 100%;
-    height: 695rem;
+    height: 695px;
     width: 100%;
     position: relative;
 }
 
 main .home .container {
     background: #000000A6;
-    padding-top: 200rem;
-    height: 495rem;
+    padding-top: 200px;
+    max-width: 100%;
+    height: inherit;
 }
 
 main .home .container h3 {
-    font: 500 30rem/62rem var(--fonteSec);
+    font: 500 30px/62px var(--fonteSec);
     color: #FFF;
     text-align: center;
 }
@@ -145,7 +149,7 @@ main .home .container .nomePrincipal {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 155em;
+    height: 155px;
 }
 
 main .home .container .nomePrincipal .tituloPrincipal {
@@ -153,9 +157,9 @@ main .home .container .nomePrincipal .tituloPrincipal {
 }
 
 main .home .container h1 {
-    font: bold 130rem/70rem var(--fonteSec);
+    font: bold 130px/70px var(--fonteSec);
     color: #FFF;
-    margin: 35rem 30rem 50rem;
+    margin: 35px 30px 50px;
 }
 
 main .home .container div .enfeite {
@@ -165,21 +169,21 @@ main .home .container div .enfeite {
 
 main .home .container div .enfeite div {
     background: var(--corSecundaria);
-    width: 5rem;
-    border-radius: 10rem;
+    width: 5px;
+    border-radius: 10px;
 }
 
 main .home .container div .enfeite div:nth-child(3) {
-    height: 40rem;
+    height: 40px;
 }
 
 main .home .container div .enfeite div:nth-child(2) {
-    height: 30rem;
-    margin: 0 10rem;
+    height: 30px;
+    margin: 0 10px;
 }
 
 main .home .container div .enfeite div:nth-child(1) {
-    height: 20rem;
+    height: 20px;
 }
 
 main .home .container div .enfeite:nth-last-of-type(1) {
@@ -187,25 +191,25 @@ main .home .container div .enfeite:nth-last-of-type(1) {
 }
 
 main .home .container .barraEnfeite {
-    width: 180rem;
-    height: 5rem;
+    width: 180px;
+    height: 5px;
     background-color: var(--corSecundaria);
     margin: auto;
-    border-radius: 10rem;
+    border-radius: 10px;
 }
 
 main .home .container p {
-    max-width: 500rem;
+    max-width: 500px;
     text-align: center;
-    margin: 25rem auto 60rem;
-    font: 400 18rem/24rem var(--fonteSec);
+    margin: 25px auto 60px;
+    font: 400 18px/24px var(--fonteSec);
     color: #FFF;
 }
 
 main .home .setaParaMaisConteudo {
     background: #FFF;
-    width: 50rem;
-    height: 50rem;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin: auto;
     display: flex;
@@ -214,8 +218,8 @@ main .home .setaParaMaisConteudo {
 }
 
 main .home .container .redesSociais .barraVerticalHome {
-    height: 300rem;
-    width: 2rem;
+    height: 300px;
+    width: 2px;
     background: #FFFFFF80;
 }
 
@@ -225,22 +229,22 @@ main .home .container .redesSociais {
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    right: 10rem;
+    right: 10px;
 }
 
 main .home .container .redesSociais a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50rem;
-    height: 50rem;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     z-index: 9995;
     border: 1px solid #FFF;
     text-decoration: none;
-    font-size: 30rem;
+    font-size: 30px;
     color: #FFF;
-    margin: 0 50rem;
+    margin: 0 50px;
 } 
 
 main .home .container .redesSociais a:hover {
@@ -250,7 +254,7 @@ main .home .container .redesSociais a:hover {
 }
 
 main .home .container .redesSociais a:nth-child(2) {
-    margin: 20rem 50rem;
+    margin: 20px 50px;
 }
 
 /* HISTÓRIA */
@@ -265,46 +269,46 @@ main #restaurante {
 
 main #restaurante  h1 {
     font-family: var(--fontePri);
-    font-size: 30rem;
+    font-size: 30px;
     font-weight: 700;
-    margin-left: 15rem;
-    margin-bottom: 20.90rem;
+    margin-left: 15px;
+    margin-bottom: 20.90px;
 }
 
 main #restaurante p {
     font-family: var(--fonteSec);
     text-align: justify;
-    font-size: 18rem;
+    font-size: 18px;
     font-weight: 400;
-    margin-left: 70rem;
-    padding-bottom: 87rem;
+    margin-left: 70px;
+    padding-bottom: 87px;
 }
 
 main #restaurante .barra-hist {
-    width: 5rem;
-    height: 41rem;
+    width: 5px;
+    height: 41px;
     background-color: var(--corSecundaria);
 }
 
 main #restaurante .flex {
     display: flex;
     justify-content: flex-start;
-    margin-left: 70rem;
+    margin-left: 70px;
 }
 
  main #restaurante .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40rem;
+    grid-gap: 40px;
     background: #FFFFFF80;
  }
 
  main #restaurante .grid .nossaHistoria {
-    margin-top: 92rem;
+    margin-top: 92px;
  }
 
  main #restaurante .grid .videoHist {
-    margin: auto 40rem;
+    margin: auto 40px;
  }
 
 main #restaurante .grid .containerVideo {
@@ -319,21 +323,21 @@ main #restaurante .grid .containerVideo .barraVideo {
 
 main #restaurante .grid .containerVideo .barraVideo div {
     background: var(--corSecundaria);
-    width: 5rem;
-    border-radius: 10rem;
+    width: 5px;
+    border-radius: 10px;
 }
 
 main #restaurante .grid .containerVideo .barraVideo div:nth-child(3) {
-    height: 40rem;
+    height: 40px;
 }
 
 main #restaurante .grid .containerVideo .barraVideo div:nth-child(2) {
-    height: 30rem;
-    margin: 0 10rem;
+    height: 30px;
+    margin: 0 10px;
 }
 
 main #restaurante .grid .containerVideo .barraVideo div:nth-child(1) {
-    height: 20rem;
+    height: 20px;
 }
 
 main #restaurante .grid .containerVideo .barraVideo:nth-last-of-type(1) {
@@ -349,7 +353,7 @@ main #menu {
 }
 
 #menu .categoriaMenu {
-    height: 400rem;
+    height: 400px;
     position: relative;
 }
 
@@ -385,36 +389,36 @@ main #menu .categoriaMenu .containerCategoria .titulo {
 }
 
 main #menu .categoriaMenu .containerCategoria .titulo div {
-    width: 5rem;
-    height: 50rem;
+    width: 5px;
+    height: 50px;
     background-color: var(--corSecundaria);
 }
 
 main #menu .categoriaMenu .containerCategoria .titulo h3 {
-    font: bold 40rem/30rem var(--fontePri);
-    letter-spacing: 2.5rem;
+    font: bold 40px/30px var(--fontePri);
+    letter-spacing: 2.5px;
     color: #FFF;
-    margin-left: 30rem;
+    margin-left: 30px;
 }
 
 main #menu .categoriaMenu .containerCategoria p {
-    font: 400 22rem/40rem var(--fontePri);
+    font: 400 22px/40px var(--fontePri);
     color: #FFF;
-    width: 500rem;
-    margin-top: 25rem;
+    width: 500px;
+    margin-top: 25px;
 }
 
 main #menu .categoriaMenu .categoria {
     position: absolute;
-    bottom: 32rem;
-    left: 70rem;
+    bottom: 32px;
+    left: 70px;
 }
 
 /* RESERVAS */
 
 main #reservas {
     width: 100%;
-    height: 500rem;
+    height: 500px;
     background-color: var(--corPrimaria);
     background-image: url('../img/secoes/Rectangle\ 44.png');
     background-repeat: no-repeat;
@@ -427,24 +431,24 @@ main #reservas #background {
 }
 
 main #reservas h1 {
-    margin-left: 15rem;
+    margin-left: 15px;
     font-family: var(--fontePri);
-    font-size: 30rem;
+    font-size: 30px;
     font-weight: 700;
 }
 
 main #reservas .barra-reserva {
-    width: 5rem;
-    height: 41rem;
+    width: 5px;
+    height: 41px;
     background-color: var(--corSecundaria);
 }
 
 main #reservas .flexRes {
     display: flex;
     justify-content: flex-start;
-    margin-left: 78rem;
-    padding-top: 72rem;
-    padding-bottom: 29rem;
+    margin-left: 78px;
+    padding-top: 72px;
+    padding-bottom: 29px;
 }
 
 main #reservas .flex1 {
@@ -452,91 +456,98 @@ main #reservas .flex1 {
     justify-content: center;
 }
 
-main #reservas button {
+main #reservas .button {
     margin: auto;
     display: block;
-    width: 330rem;
-    height: 70rem;
-    border-radius: 30rem;
+    width: 330px;
+    height: 70px;
+    border-radius: 30px;
     color: var(--corPrimaria);
     border: none;
     letter-spacing: 0.2em;
     font-family: var(--fontePri);
-    font-size: 20rem;
+    font-size: 20px;
     font-weight: 700;
     background-color: var(--corSecundaria);
     cursor: pointer;
 }
 
-main #reservas button:hover {
+main #reservas .button:hover {
     background: #FFFFFF;
     color: var(--corTerciaria);
     transform: scale(1.05);
     transition: all 0.2s;
 }
 
-main #reservas .flexivel .input {
-    width: 330rem;
-    height: 70rem;
-    outline: none;
-    border-radius: 10rem;
-    padding-left: 56rem;
-    box-sizing: border-box;
-    border: none;
-    margin-bottom: 50rem;
-    font-family: var(--fontePri);
-    font-size: 20rem;
-    font-style: normal;
+main #reservas .flexivel .flex1 .input-group {
+    justify-content: center;
+    max-width: 330px;
+    height: fit-content;
+}
+
+main #reservas .flexivel .flex1 .input-group:nth-of-type(2) {
+    margin: 0 45px;
+}
+
+main #reservas .flexivel .flex1 .input-group:nth-child(3) {
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+main #reservas .flexivel .flex1 .input-group-text {
+    height: 70px;
+}
+
+main #reservas .flexivel .flex1 .form-control {
+    height: 70px;
+    flex-grow: 0;
+    width: 330px;
+}
+
+main #reservas .flexivel  .form-control {
+    color: var(--corPrimaria);
     letter-spacing: 0.2em;
-    font-weight: 700;
-    color: #C4C4C4;
+    font: 700 20px var(--fontePri);
 }
 
 main #reservas .flexivel .inputRoxo {
-    width: 330rem;
-    height: 70rem;
+    width: 330px;
+    height: 70px;
     background-color: var(--corPrimaria);
     outline: none;
     border: none;
     box-sizing: border-box;
-    padding: 0 50rem;
-    margin-bottom: 50rem;
+    padding: 0 50px;
+    margin-bottom: 50px;
     font-family: var(--fontePri);
-    font-size: 20rem;
+    font-size: 20px;
     font-style: normal;
     letter-spacing: 0.2em;
     font-weight: 700;
     color: var(--corSecundaria);
-    border-radius: 5rem;
+    border-radius: 5px;
 }
 
 main #reservas .flexivel .input:nth-child(2) {
-    margin: 0 45rem;
+    margin: 0 45px;
 }
 
 main #reservas .flexivel .inputRoxo:nth-child(2) {
-    margin: 0 45rem;
+    margin: 0 45px;
 }
 
-main #reservas .flexivel .input:nth-child(3) {
-    width: 370rem;
-}
-
-main #reservas .flexivel .inputRoxo:nth-child(3) {
-    width: 370rem;
-}
 
 /* FOOTER */
 
 footer {
     position: relative;
-    padding-bottom: 60rem;
+    padding-bottom: 60px;
     background: url('../img/backgroundFooter.png') center / cover no-repeat;
 }
 
 footer .rodape {
     background: rgba(20, 20, 20, 0.75);
-    padding-bottom: 65rem;
+    padding-bottom: 65px;
 }
 
 footer .titulo {
@@ -545,16 +556,16 @@ footer .titulo {
 }
 
 footer .titulo .barraTitulo {
-    width: 5rem;
-    height: 41rem;
+    width: 5px;
+    height: 41px;
     background: var(--corSecundaria);
-    margin: 65rem 15rem 0 70rem;
+    margin: 65px 15px 0 70px;
 }
 
 footer .titulo h1 {
-    font: 700 30rem/30rem var(--fontePri);
+    font: 700 30px/30px var(--fontePri);
     color: #FFF;
-    margin: 70rem 0 24rem;
+    margin: 70px 0 24px;
 }
 
 footer .conteiner {
@@ -563,7 +574,7 @@ footer .conteiner {
 }
 
 footer .endereco {
-    margin-left: 70rem;
+    margin-left: 70px;
 }
 
 footer .endereco .filial {
@@ -572,24 +583,25 @@ footer .endereco .filial {
 }
 
 footer .endereco .filial:nth-child(1) {
-    margin-bottom: 60rem;
+    margin-bottom: 60px;
 }
 
-footer .endereco .filial i {
+footer .endereco .filial i, footer .horario i,
+footer .contatos .telefones i {
     color: #FFF;
-    font-size: 36rem;
-    margin-right: 25rem;
+    font-size: 36px;
+    margin-right: 25px;
 }
 
 footer .endereco .filial h2 {
-    font: 700 20rem/30rem var(--fontePri);
+    font: 700 20px/30px var(--fontePri);
     color: #FFF
 }
 
 footer .endereco .filial p {
-    font: 400 20rem/30rem var(--fontePri);
+    font: 400 20px/30px var(--fontePri);
     color: #FFF;
-    width: 215rem;
+    width: 215px;
 }
 
 footer .horario {
@@ -600,19 +612,19 @@ footer .horario {
 }
 
 footer .horario .barraVertical {
-    width: 5rem;
-    height: 300rem;
+    width: 5px;
+    height: 300px;
     background: #FFFFFF40;
 }
 
 footer .horario i {
     color: #FFF;
-    font-size: 36rem;
-    margin-right: 25rem;
+    font-size: 36px;
+    margin-right: 25px;
 }
 
 footer .horario h2, footer .horario p {
-    font: 700 20rem/30rem var(--fontePri);
+    font: 700 20px/30px var(--fontePri);
     color: #FFF;
 }
 
@@ -630,25 +642,19 @@ footer .blocoContatos .contatos .telefones {
     align-items: center;
 }
 
-footer .blocoContatos .contatos .telefones i {
-    color: #FFF;
-    font-size: 30rem;
-    margin-right: 25rem;
-}
-
 footer .blocoContatos .contatos .telefones h2 {
-    font: 700 20rem/30rem var(--fontePri);
+    font: 700 20px/30px var(--fontePri);
     color: #FFF;
 }
 
 footer .blocoContatos .contatos a {
-    font: 500 20rem/30rem var(--fontePri);
+    font: 500 20px/30px var(--fontePri);
     color: #FFF;
-    border: 2rem solid #FFF;
-    border-radius: 40rem;
-    margin-top: 15rem;
+    border: 2px solid #FFF;
+    border-radius: 40px;
+    margin-top: 15px;
     cursor: pointer;
-    padding: 10rem 60rem;
+    padding: 10px 60px;
     display: block;
     text-decoration: none;
 }
@@ -669,8 +675,8 @@ footer .midia div a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50rem;
-    height: 50rem;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     color:#FFF;
     border: 1px solid #FFF;
@@ -684,22 +690,22 @@ footer .midia div a:hover {
 }
 
 footer .midia div a i {
-    font-size: 30rem;
+    font-size: 30px;
 }
 
 footer .midia h2 {
-    font: 700 20rem/30rem var(--fontePri);
+    font: 700 20px/30px var(--fontePri);
     color: #FFF;
-    margin: 30rem 0;
+    margin: 30px 0;
 }
 
 footer .copyright {
-    height: 60rem;
+    height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font: 500 25rem/30rem var(--fontePri);
+    font: 500 25px/30px var(--fontePri);
     background-color: #FFF;
     color: #000;
     position: absolute;
@@ -707,7 +713,7 @@ footer .copyright {
 }
 
 footer .copyright i {
-    margin-right: 15rem;
+    margin-right: 15px;
 }
 
 @media all and (max-width: 1200px) {
@@ -716,7 +722,7 @@ footer .copyright i {
     }
 
     header figure img {
-        height: 150rem;
+        height: 150px;
     } 
 
     header ul:nth-of-type(1) {
@@ -728,13 +734,11 @@ footer .copyright i {
     }
     
     main .home .container h1 {
-        font-size: 90rem;
+        font-size: 90px;
     }
     
     main .home .container {
-        background: #000000A6;
-        height: 515rem;
-        padding-top: 180rem;
+        padding-top: 180px;
     }
         
     main .home .container div .enfeite, main .home .container .barraEnfeite  {
@@ -747,7 +751,7 @@ footer .copyright i {
                              'bebidas'
                              'vinhos'
                              'sobremesas';
-        grid-gap: 10rem;
+        grid-gap: 10px;
         background: var(--corPrimaria);
     }
 
@@ -760,25 +764,30 @@ footer .copyright i {
     main #restaurante .grid {
         grid-template-columns: 1fr;
         place-items: center;
-        padding-bottom: 40rem;
+        padding-bottom: 40px;
     }
 
     main #restaurante p {
-        padding-bottom: 0rem;
+        padding-bottom: 0px;
     }
 
     main #restaurante .grid .nossaHistoria p {
-        margin-right: 70rem;
+        margin-right: 70px;
     }
 
     main #reservas {
-        height: 950rem;
+        height: max-content;
+    }
+
+    main #reservas #background {
+        height: max-content;
+        padding: 40px;
     }
 
     main #reservas .flexivel .flex1 {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 45rem;
+        margin-bottom: 45px;
     }
 
     main #reservas .flexivel .flex1 input{
@@ -787,15 +796,19 @@ footer .copyright i {
     } 
     
     main #reservas .flexivel .flex1 input:nth-child(2) {
-        margin: 45rem 0;
+        margin: 45px 0;
     }
-    
+
+    main #reservas .flexivel .flex1 .input-group:nth-of-type(2) {
+        margin: 45px;
+    }
+
     footer .endereco {
         margin: 0;
     }
 
     footer .endereco .filial:nth-child(1){
-        margin-bottom: 30rem;
+        margin-bottom: 30px;
     }
     
     footer .horario .barraVertical {
@@ -803,7 +816,7 @@ footer .copyright i {
     }
 
     footer .horario {
-        margin: 30rem 0;
+        margin: 30px 0;
     }
 
     footer .conteiner {
