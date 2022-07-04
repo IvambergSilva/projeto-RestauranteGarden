@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a3f86d1427.js" crossorigin="anonymous"></script>
@@ -71,7 +74,7 @@
 
             </div>
         </section>
-
+        
         <section id="restaurante">
             <div class="grid">
                 <div class="nossaHistoria">
@@ -158,9 +161,16 @@
                 </div>
                 <div class="flexivel">
                     <div class="flex1">
-                        <input type="text" placeholder="NOME" class="input">
-                        <input type="tel" name="telefone" placeholder="CELULAR" class="input">
-                        <input type="email" name="email" placeholder="EMAIL" class="input">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="NOME" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="tel" class="form-control" placeholder="99 99999-9999" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="EMAIL" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
                     </div>
                     <div class="flex1">
                         <input type="date" name="dataReserva" class="inputRoxo">
@@ -235,5 +245,6 @@
             <span>Copyright AFI 2022</span>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
